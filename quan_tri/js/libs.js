@@ -11,7 +11,7 @@ const dang_nhap=()=>{
                 // Lưu session
                 sessionStorage.setItem('USER',JSON.stringify(result.Noi_dung));
                 // Chuyển trang
-                window.location=`quantri.html`;
+                window.location=`https://tieuphishop289.onrender.com/quan_tri/quantri.html`;
             }else{
                 alert('Thông tin đăng nhập không hợp lệ')
             }
