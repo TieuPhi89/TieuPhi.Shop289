@@ -1,5 +1,5 @@
-const urlService = `http://localhost:8080`;
-const urlImages = `http://localhost:8080`;
+const urlService = `https://tieuphihephucvu289.onrender.com`;
+const urlImages = `https://res.cloudinary.com/djqfelq4l/image/upload/v1/images`;
 
 const getAPI=(apiName)=> {
     return new Promise((resolve, reject) => {
