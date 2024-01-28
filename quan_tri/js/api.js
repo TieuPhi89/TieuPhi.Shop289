@@ -1,4 +1,4 @@
-const Dia_chi_Dich_vu='http://127.0.0.1:8080';
+const Dia_chi_Dich_vu='https://tieuphihephucvu289.onrender.com';
 const Dia_chi_Img=`https://res.cloudinary.com/djqfelq4l/image/upload/v1/images`;
 
 const apiDangnhap=(nguoidung)=>{
