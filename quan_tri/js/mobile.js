@@ -225,8 +225,8 @@ const saveImg=(Ma_so)=>{
     if (imgName) {
         let reader = new FileReader()
         let Chuoi_nhi_phan = ""
-        let Ten_Hinh = `${Ma_so}.png` // upload vào thư mục images trong dịch vụ nodejs
-        //let Ten_Hinh = `${Ma_so}` // upload lên trên host cloudinary
+        //let Ten_Hinh = `${Ma_so}.png` // upload vào thư mục images trong dịch vụ nodejs
+        let Ten_Hinh = `${Ma_so}` // upload lên trên host cloudinary
         reader.onload = function (e) {
             Chuoi_nhi_phan = e.target.result;
             let img = { "name": Ten_Hinh, "src": Chuoi_nhi_phan }
