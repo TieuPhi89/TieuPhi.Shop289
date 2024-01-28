@@ -1,0 +1,9 @@
+Step = Tổng giá trị/(Tổng số lượng sp -1)
+Tivi: Min = 200, Max = 1000, Tổng SL = 36
+Điện thoại: Min = 100, Max = 800, Tổng SL = 55
+Foods: Min = 5, Max = 50, Tổng SL = 30 (15 drinks, 15 food)
+
+Cách tính:
+Tổng SL sản phẩm = 36 + 55 + 30 = 121
+Tổng giá trị = 1000 - 5 = 995
+Step = 995/(121-1) = 8.291

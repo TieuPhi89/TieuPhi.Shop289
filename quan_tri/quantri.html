@@ -1,0 +1,128 @@
+<script>
+    if (sessionStorage.getItem("USER") == undefined) {
+        window.location = `.`
+    } else {
+        var user = JSON.parse(sessionStorage.getItem("USER"));
+
+    }
+</script>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Quản trị Cửa hàng 289</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bg-dark text-white text-center">
+                <h1>Hệ thống Quản trị - Cửa hàng 289</h1>
+            </div>
+
+        </div>
+    </div>
+    <div class="container pt-2">
+        <div class="row">
+            <div class="col-12 text-right">
+                <h5 class="text-info">
+                    Chào:
+                    <script>document.write(`${user.Ho_ten} - ${user.Nhom.Ten}`)</script>
+                    <small><a href="javaScript:void(0)" 
+                        class="text-danger" onclick="sessionStorage.removeItem('USER');window.location=`.`">
+                        Thoát Đăng nhập</a></small>
+                </h5>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row pt-lg-5 text-center">
+            <div class="col-3 p-2" onclick="window.location='./mobile/'">
+                <div class="btn btn-danger">
+                    <img src="images/mobile.png" alt="" class="img-fluid img-thumbnail">
+                    <h5 class="text-white">Mobile</h5>
+                </div>
+            </div>
+            <div class="col-3 p-2" onclick="window.location='./tivi/'">
+                <div class="btn btn-warning">
+                    <img src="images/tivi.png" alt="" class="img-fluid img-thumbnail">
+                    <h5 class="text-white">Tivi</h5>
+                </div>
+            </div>
+            <div class="col-3 p-2" onclick="window.location='./food/'">
+                <div class="btn btn-primary">
+                    <img src="images/food.png" alt="" class="img-fluid img-thumbnail">
+                    <h5 class="text-white">Food</h5>
+                </div>
+            </div>
+            <div class="col-3 p-2" onclick="window.location='./user/'">
+                <div class="btn btn-success">
+                    <img src="images/user.png" alt="" class="img-fluid img-thumbnail">
+                    <h5 class="text-white">User</h5>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- biểu đồ -->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-3">
+                <h5>Thống kê Mobile</h5>
+                <div id="Th_Bieu_do_Mobile" class="card"></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <h5>Thống kê Tivi</h5>
+                <div id="Th_Bieu_do_Tivi" class="card"></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <h5>Thống kê Food</h5>
+                <div id="Th_Bieu_do_Food" class="card"></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <h5>Thống kê Nhân Sự</h5>
+                <div id="Th_Bieu_do_User" class="card"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    
+    <!-- CDN -->
+    <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+    <!-- SRC -->
+    <!-- <script src="./code/highcharts.js"></script> -->
+    <script src="../quan_tri/code/highcharts.js"></script>
+    <script src="../quan_tri/code/modules/accessibility.js"></script>    
+    <script src="../quan_tri/code/modules/exporting.js"></script>
+
+    <!-- <script src="../quan_tri/js/api.js"></script> -->
+    <script src="../quan_tri/js/api_bieu_do.js"></script>
+
+    <script src="../quan_tri/js/bieu_do_mobile.js"></script>
+    <script src="../quan_tri/js/bieu_do_tivi.js"></script>
+    <script src="../quan_tri/js/bieu_do_food.js"></script>
+    <script src="../quan_tri/js/bieu_do_user.js"></script>
+</body>
+
+</html>

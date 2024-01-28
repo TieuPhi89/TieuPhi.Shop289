@@ -1,0 +1,105 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar a{
+    color: rgb(253 251 255);;
+}
+
+.navbar .dropdown-item{
+    color: #d62304;
+}
+
+.jumbotron {
+    background-color: #4285F4;
+    color: whitesmoke;
+    margin-bottom: 0rem;
+}
+
+.jum_tivi {
+    /* background-color: #00C851 !important */
+    background-color: #00C851 !important
+    /* #00C851 */
+}
+
+.jum_mobile {
+    /* background-color: #00C851 !important */
+    background-color: #ff4444 !important
+    /* #00C851 */
+}
+
+.jum_food {
+    background-color: #ffbb33 !important
+}
+
+.card-footer{
+    background-color: transparent;
+    border-top: none;
+}
+.footer{
+    background-color: #4285F4;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.card:hover{
+    border: 2px double rgb(61, 136, 112);
+}
+.food_color{
+    color: grey;
+    font-weight: bolder;
+}
+.fa{
+    /* color: rgb(125, 120, 120); */
+    /* color: #e0f7fa cyan  */
+    color: #18acc0;
+    /* color: #FF2CDF #0014FF; */
+}
+
+/* image zoom in animation */
+.img-holder {
+    overflow: hidden;
+}
+
+.img-holder img {
+    transition: all 1.5s ease;
+}
+
+.img-holder:hover img {
+    transform: scale(1.5);
+}
+
+/*End image zoom in animation */
+/* =========================================== */
+
+#thNhom li a {
+    color: blue !important;
+}
+
+#thNhom li.active a {
+    color: white !important;
+}
+
+#thNhom a {
+    text-decoration: none;
+}
+
+#thButton a {
+    color: orange !important;
+    transition: color 0.3s;
+}
+
+#thButton a:hover {
+    color: darkorange;
+}
+
+#thButton a.active,
+#thButton a.active:hover {
+    color: white !important;
+}
+
+#thButton a {
+    text-decoration: none;
+}
+
